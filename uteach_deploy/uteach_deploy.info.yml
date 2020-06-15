@@ -1,0 +1,6 @@
+name: 'UTeach Deploy'
+type: module
+core: 8.x
+dependencies:
+  - features
+package: 'UTeach Customizations'
