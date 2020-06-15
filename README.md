@@ -3,9 +3,14 @@ This repository provides a common set of configurations for UTeach sites based o
 
 Modules in this repository should be located in any given site's `web/modules/custom` directory.
 
-Upon initial creation of a new site, the `uteach_deploy` module should be programmatically enabled in the LIVE environment. Currently, this repository:
+The `composer.json` file includes the canonical version of sites' Composer dependencies, which currently include SAML functionality and the UTProf Add-on.
 
-- Includes a canonical version of the sites' Composer dependencies in `composer.json`
+Upon initial creation of a *new* site that should use this configuration:
+- Copy the `composer.json` into the site project root
+- Copy the contents of `web/modules/custom` into its respective directory
+- Build the site via Composer as normal. After site installation, enable the `uteach_deploy` module should be programmatically. Currently, enabling the deployment module will:
+
+- UTeach Deploy: Enable SAML functionality (users and the activation of SAML still need to be done manually)
 - Uteach Deploy: Enables the UTProf functionality
 - Uteach Deploy: Enables as a UTeach-tooled version of the Content Editor role, which includes permissions for the Profile content.
 

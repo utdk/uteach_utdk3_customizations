@@ -12,6 +12,8 @@
  * Implements hook_install().
  */
 function uteach_deploy_install() {
+  // Install SAML components.
+  \Drupal::service('module_installer')->install(['utexas_saml_auth_helper']);
   // Install the Profile add-on.
   \Drupal::service('module_installer')->install(['utprof_block_type_profile_listing']);
   // Install the UTeach-tooled 'Content Editor' role.
