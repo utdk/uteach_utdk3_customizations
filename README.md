@@ -9,3 +9,7 @@ Upon initial creation of a new site, the `uteach_deploy` module should be progra
 - Enables as a UTeach-tooled version of the Content Editor role, which includes permissions for the Profile content.
 
 Subsequent deployment updates should be added as update hooks to `uteach_deploy.install`, and those same changes should be added to the `hook_install()` implementation so that new sites will receive those changes.
+
+## Sites this repository is currently used on
+- UTeach Main: https://github.austin.utexas.edu/eis1-wcs/uteach-main
+- UTeach Outreach: https://github.austin.utexas.edu/eis1-wcs/uteach-outreach
