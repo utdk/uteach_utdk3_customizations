@@ -16,6 +16,15 @@ function uteach_deploy_install() {
   \Drupal::service('module_installer')->install(['utexas_saml_auth_helper']);
   // Install the Profile add-on.
   \Drupal::service('module_installer')->install(['utprof_block_type_profile_listing']);
+  // Install the UTNews add-on
+  \Drupal::service('module_installer')->install(['utnews_view_listing_page']);
   // Install the UTeach-tooled 'Content Editor' role.
   \Drupal::service('module_installer')->install(['uteach_role_content_editor']);
+}
+
+/**
+ * Enable UTNews add-on on existing sites.
+ */
+function uteach_deploy_update_8101() {
+  \Drupal::service('module_installer')->install(['utnews_view_listing_page']);
 }
