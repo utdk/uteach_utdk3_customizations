@@ -37,3 +37,19 @@ function uteach_deploy_update_8102() {
     'uteach_role_content_editor',
   ], TRUE);
 }
+
+/**
+ * Enable UTevent add-on on existing sites.
+ */
+function uteach_deploy_update_8103() {
+  \Drupal::service('module_installer')->install(['utevent_block_type_event_listing']);
+  \Drupal::service('module_installer')->install(['utevent_demo_content']);
+  \Drupal::service('module_installer')->install(['utevent_view_listing_page']);
+}
+
+/**
+ * Add newly available News listing block.
+ */
+function uteach_deploy_update_8104() {
+  \Drupal::service('module_installer')->install(['utnews_block_type_news_listing']);
+}

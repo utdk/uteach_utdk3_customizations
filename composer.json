@@ -11,6 +11,7 @@
     "utexas/utexas_pantheon_saml_auth": "^1.0",
     "utexas/utnews": "^1.0",
     "utexas/utprof": "^1.0",
+    "utexas/utevent": "^1.0",
     "zaporylie/composer-drupal-optimizations": "^1.0"
   },
   "repositories": {
