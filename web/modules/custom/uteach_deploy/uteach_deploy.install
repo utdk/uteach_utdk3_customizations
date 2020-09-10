@@ -53,3 +53,12 @@ function uteach_deploy_update_8103() {
 function uteach_deploy_update_8104() {
   \Drupal::service('module_installer')->install(['utnews_block_type_news_listing']);
 }
+
+/**
+ * Update content editor role permissions to include events.
+ */
+function uteach_deploy_update_8105() {
+  \Drupal::service('features.manager')->import([
+    'uteach_role_content_editor',
+  ], TRUE);
+}
