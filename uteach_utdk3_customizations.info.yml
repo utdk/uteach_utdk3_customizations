@@ -1,6 +1,8 @@
-name: 'UTeach Deploy'
+name: 'UTeach Customizations'
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - features
+  - uteach_deploy
 package: 'UTeach Customizations'
