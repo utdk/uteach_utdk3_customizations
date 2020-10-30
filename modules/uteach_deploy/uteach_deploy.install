@@ -14,10 +14,20 @@
 function uteach_deploy_install() {
   // Install SAML components.
   \Drupal::service('module_installer')->install(['utexas_saml_auth_helper']);
+
   // Install the Profile add-on.
   \Drupal::service('module_installer')->install(['utprof_block_type_profile_listing']);
-  // Install the UTNews add-on.
+
+  // Install the News add-on.
   \Drupal::service('module_installer')->install(['utnews_view_listing_page']);
+  \Drupal::service('module_installer')->install(['utnews_block_type_news_listing']);
+  \Drupal::service('module_installer')->install(['utnews_demo_content']);
+
+  // Install the Event add-on.
+  \Drupal::service('module_installer')->install(['utevent_block_type_event_listing']);
+  \Drupal::service('module_installer')->install(['utevent_demo_content']);
+  \Drupal::service('module_installer')->install(['utevent_view_listing_page']);
+
   // Install the UTeach-tooled 'Content Editor' role.
   \Drupal::service('module_installer')->install(['uteach_role_content_editor']);
 }
@@ -52,6 +62,7 @@ function uteach_deploy_update_8103() {
  */
 function uteach_deploy_update_8104() {
   \Drupal::service('module_installer')->install(['utnews_block_type_news_listing']);
+  \Drupal::service('module_installer')->install(['utnews_demo_content']);
 }
 
 /**
