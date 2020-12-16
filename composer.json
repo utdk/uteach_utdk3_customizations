@@ -4,13 +4,12 @@
   "type": "drupal-module",
   "license": "MIT",
   "require": {
-    "composer/installers": "^1.7",
-    "oomphinc/composer-installers-extender": "1.1.2",
+    "oomphinc/composer-installers-extender": "^1 || ^2",
+    "drupal/role_delegation": "1.1.0",
     "utexas/utexas_pantheon_saml_auth": "^1.0",
     "utexas/utnews": "^1.0",
     "utexas/utprof": "^1.0",
-    "utexas/utevent": "^1.0",
-    "zaporylie/composer-drupal-optimizations": "^1.0"
+    "utexas/utevent": "^1.0"
   },
   "repositories": {
     "drupal": {

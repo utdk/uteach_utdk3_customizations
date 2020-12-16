@@ -28,8 +28,9 @@ function uteach_deploy_install() {
   \Drupal::service('module_installer')->install(['utevent_demo_content']);
   \Drupal::service('module_installer')->install(['utevent_view_listing_page']);
 
-  // Install the UTeach-tooled 'Content Editor' role.
+  // Install the UTeach-tooled roles.
   \Drupal::service('module_installer')->install(['uteach_role_content_editor']);
+  \Drupal::service('module_installer')->install(['uteach_role_site_manager']);
 }
 
 /**
@@ -72,4 +73,18 @@ function uteach_deploy_update_8105() {
   \Drupal::service('features.manager')->import([
     'uteach_role_content_editor',
   ], TRUE);
+}
+
+/**
+ * Enable the role_delegation module.
+ */
+function uteach_deploy_update_8106() {
+  \Drupal::service('module_installer')->install(['role_delegation']);
+}
+
+/**
+ * Enable the uteach_role_site_manager feature module to import UTeach perms.
+ */
+function uteach_deploy_update_8107() {
+  \Drupal::service('module_installer')->install(['uteach_role_site_manager']);
 }
