@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * General modifications.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+function uteach_utdk3_customizations_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'uteach_utdk3_customizations/responsive_video';
+}
+
+/**
+ * Implements hook_preprocess_media().
+ */
+function uteach_utdk3_customizations_preprocess_media(array &$variables) {
+  // Add a wrapper class to oembed media.
+  if (isset($variables['elements']['field_media_oembed_video'])) {
+    $variables['attributes']['class'][] = 'media-oembed-wrapper';
+  }
+}

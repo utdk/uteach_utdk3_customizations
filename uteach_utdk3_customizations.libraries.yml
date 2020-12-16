@@ -1,0 +1,5 @@
+responsive_video:
+  version: 1.x
+  css:
+    layout:
+      css/responsive-video.css: {}
