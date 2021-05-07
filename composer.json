@@ -4,21 +4,9 @@
   "type": "drupal-module",
   "license": "MIT",
   "require": {
-    "oomphinc/composer-installers-extender": "^1 || ^2",
-    "drupal/role_delegation": "1.1.0",
-    "utexas/utexas_pantheon_saml_auth": "^1.0",
-    "utexas/utnews": "^1.0",
-    "utexas/utprof": "^1.0",
-    "utexas/utevent": "^1.0"
-  },
-  "repositories": {
-    "drupal": {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
-    "utexas": {
-      "type": "composer",
-      "url": "https://artifacts.austin.utexas.edu/eis1-wcms"
-    }
+    "utexas/pantheon_saml_integration": "^3.0",
+    "utexas/utnews": "^3.0",
+    "utexas/utprof": "^3.0",
+    "utexas/utevent": "^3.0"
   }
 }
