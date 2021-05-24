@@ -7,7 +7,7 @@ After site installation, enable the `uteach_utdk3_customizations` module.
 
 Currently, enabling the deployment module will:
 
-- Enable SAML functionality (users and the activation of SAML still need to be done manually)
+- Enable Enterprise Login functionality (users and the activation of SAML still need to be done manually)
 - Enable the UTProf, UTNews, & UTEvent functionality
 - Enable a UTeach-tooled version of the Content Editor role, which includes permissions for the Profile content.
 

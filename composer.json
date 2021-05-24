@@ -1,8 +1,10 @@
 {
   "name": "uteach/uteach_utdk3_customizations",
-  "description": "UT Drupal Kit Site",
-  "type": "drupal-module",
-  "license": "MIT",
+  "description": "Customizations for the UTeach portfolio of UT Drupal Kit sites",
+  "type": "drupal-custom-module",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
   "require": {
     "utexas/pantheon_saml_integration": "^3.0",
     "utexas/utnews": "^3.0",
