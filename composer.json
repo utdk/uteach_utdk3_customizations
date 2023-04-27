@@ -6,7 +6,8 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "utexas/pantheon_saml_integration": "^3.0",
+    "utexas/utexas_pantheon_logs_http": "^1 || ^2",
+    "utexas/pantheon_saml_integration": "^3 || ^4",
     "utexas/utnews": "^3.0",
     "utexas/utprof": "^3.0",
     "utexas/utevent": "^3.0"
